@@ -18,6 +18,10 @@ The diffusion operator is a quantum operation that amplifies the amplitudes of t
 ![image](https://github.com/PalakTripathi1/QCG/assets/127396297/1935283b-6698-491c-b5ba-8b72b092ad6c)
 where I is the identity operator.
 
+The Schematic Circuit can be shown as:
+![image](https://github.com/PalakTripathi1/QCG/assets/127396297/a3257bb4-5a08-47e0-96c3-4e08f06dafe3)
+
+
 The Code is explained as:
 Input: N: number of items in the list, factor(x): a function that returns true if x is the target item, and false otherwise
 

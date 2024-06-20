@@ -15,6 +15,34 @@ where ∣x⟩ is the state corresponding to the element x.
  Next is the Diffusion Operator as:
  Diffusion operator: 
 The diffusion operator is a quantum operation that amplifies the amplitudes of the states that correspond to the marked element. The diffusion operator can be written as:
+![image](https://github.com/PalakTripathi1/QCG/assets/127396297/1935283b-6698-491c-b5ba-8b72b092ad6c)
+where I is the identity operator.
+
+The Code is explained as:
+Input: N: number of items in the list, factor(x): a function that returns true if x is the target item, and false otherwise
+
+Step 1: Initialize state
+
+Hadamard transform on all bits
+Step 2: Iterate over Grover’s algorithm
+
+for k = 1 to sqrt(N) do
+
+    Step 2a: Apply the factor
+
+Apply the factor(oracle) to the state
+    # Step 2b: Apply the diffusion operator
+
+Hadamard transform on all qubits
+Apply an X gate on all qubits
+Apply a multi-controlled Z gate (which flips the sign of the state only if all bits are in the state |1>)
+Apply an X gate on all qubits
+Hadamard transform on all qubits
+end for
+
+Step 3: Measure the state and output the result
+
+Measure the state and output the result
 
 
 
